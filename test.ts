@@ -1,0 +1,1 @@
+const myFristName = "gaston";
