@@ -3,12 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "build:esbuild": "esbuild src/test2.ts --bundle --outfile=build/out.esbuild.js",
+    "build:esbuild:script": "node scripts/build.esbuild.js"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.40.0",
     "@typescript-eslint/parser": "^5.40.0",
+    "esbuild": "^0.15.10",
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.31.9",
     "prettier": "^2.7.1",
     "typescript": "^4.8.4"
   }
